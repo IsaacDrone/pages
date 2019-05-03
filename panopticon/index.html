@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="author" content="isaac joseph moore">
+			<meta name="description" content=" a site of despair ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Libre|Coda|Kelly+Slab" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css">
+
+    <title> Panopticon </title>
+</head>
+<body id="login-page">
+
+    <div class="gridwrap1">
+        <div class="item" id="item1"> -Panopticon- </div>
+
+        <div class="item" id="item2">       
+             <form class="loginform" id="loginform">
+                   
+                <input type="text" name="username" class="forma" id="username" placeholder="Username" >
+                  
+                
+                <input type="password" name="password" class="forma" id="password" placeholder="Password">
+                 
+
+                <input type="submit" value="Sign In" class="forma" id="loginsubmit" onclick="login">
+
+             </form> 
+        </div>
+        <div class="item" id="item3"></div>
+        <div class="item" id="item4">true</div>
+        <div class="item" id="item5">false</div>
+        <div class="item" id="item6"></div>
+        <!-- <div class="item" id="item7">circle5</div>
+        <div class="item" id="item8">circle6</div> -->
+        <div class="item" id="item9">the panopticon seeks</div>
+        <div class="item" id="item10"> <img src="eye2.jpg" alt="don't mess with the monkey"> </div>
+        <div class="item" id="item11"></div>
+        <div class="item" id="item12"> in </div>
+        <div class="item" id="item13"> out </div>
+        <div class="item" id="item14"></div>
+        <!-- <div class="item" id="item15">circle11</div>
+        <div class="item" id="item16">circle12</div> -->
+        <div class="item" id="item17"></div>
+    </div>
+    
+    <script>
+
+
+            
+        let users = [
+          ['abc', 123],
+          ['pam', 123],
+          ['sue', 345],
+          ['tim', 789],
+          ['dan', 999],
+          ['bob', 919]
+        
+        ];
+        
+        document.getElementById('loginsubmit').addEventListener('click', login);
+        
+        function login(e) {
+            e.preventDefault();
+          var username = document.getElementById("username").value
+          var password = document.getElementById("password").value
+        
+          let row = users.length;
+        
+          for(i = 0; i < row; i++) {
+        
+              if(username == users[i][0] && password == users[i][1]) {
+                  window.location='gate.html';
+                //   alert(username + ' is logged in!!!')
+                document.getElementById("loginform").reset();
+                  return
+              }
+          }
+          alert('incorrect username or password');
+          document.getElementById("loginform").reset();
+        }
+        
+        
+                
+                </script>
+
+
+
+</body>
+</html>

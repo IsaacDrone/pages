@@ -1,0 +1,200 @@
+
+body {
+    background-image: url("images/background.jpg");
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.hello {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    color: #ff0000;
+    font-family: 'Alfa Slab One', serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    text-shadow: 2px 2px 2px #000000;
+    letter-spacing: 10px;
+    white-space: nowrap;
+    opacity: 1;
+    /* animation: slide1 2s 1; 
+    animation-timing-function: linear; */
+    animation: hello 2s 1; 
+    animation-timing-function: linear;
+}
+
+
+@keyframes hello {
+    0% { 
+        transform: translate3d(-75%, -50%, 0);
+        text-shadow: 0px 0px 0px;
+        opacity: 0;
+    }
+} 
+
+
+@media screen and (max-width: 800px) {
+    .hello {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+       font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hello {
+    font-size: 25px;
+    }
+}
+
+
+
+
+.heckyeah {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    color:white;
+    font-family: 'Alfa Slab One', serif;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 10px;
+    white-space: nowrap;
+    text-shadow: 2px 2px 10px #000000, 0px 0px 20px #ff0000;
+    opacity: 1;
+    /* animation: slide2 2s 1; 
+    animation-timing-function: linear; */
+    animation: heckyeah 2s 1; 
+    animation-timing-function: linear;
+}
+
+@keyframes heckyeah {
+    0% { 
+        transform: translate3d(0%, -50%, 0);
+        text-shadow: 0px 0px 0px, 0px 0px 0px;
+        opacity: 0;
+    }
+} 
+
+@media screen and (max-width: 800px) {
+    .heckyeah {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .heckyeah {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    font-size: 50px;
+    }
+}
+
+
+.webdesign {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    color: #000000;
+    font-family: 'Alfa Slab One', serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 10px;
+    white-space: nowrap;
+    text-shadow: 2px 2px 10px #000000, 0px 0px 20px #ff0000;
+    opacity: 1;
+    /* animation: slide3 2s 1; 
+    animation-timing-function: linear; */
+    animation: webdesign 2s 1; 
+    animation-timing-function: linear;
+}
+
+@keyframes webdesign {
+    0% { 
+        transform: translate3d(-50%, 0%, 0);
+        text-shadow: 0px 0px 0px, 0px 0px 0px;
+        opacity: 0;
+    }
+} 
+
+@media screen and (max-width: 800px) {
+    .webdesign {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+       font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .webdesign {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+    font-size: 20px;
+    }
+}
+
+
+.btncnt {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    opacity: 1;
+    text-decoration: none;
+    animation: btnfade 2.5s 1;
+   animation-timing-function: linear;
+}
+
+@keyframes btnfade {
+    0% { opacity: 0; 
+}
+    50% { opacity: 0; 
+}
+}
+
+#button6 {
+    color: #ffffff;
+    background: linear-gradient(-170deg, #ff4f00, #ffff00);
+    border: 1px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px #000000;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    display: block;
+    height: 40px;
+    width: 150px;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#button6:hover {
+    animation: shake 75ms 7;
+    animation-timing-function: linear;
+}
+
+@keyframes shake {
+    0% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+}

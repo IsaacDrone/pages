@@ -1,0 +1,230 @@
+body {
+    background: linear-gradient(to bottom right, #84005f, #ffffff);
+}
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: .125fr .25fr .5fr .5fr 1fr 1fr .5fr .5fr;
+
+    grid-auto-rows: minmax(60px, auto);
+     /* minmax(60px, auto) minmax(100px, auto) minmax(100px, auto) minmax(100px, auto) minmax(50px, auto) minmax(50px, auto); */ 
+
+    grid-gap: 15px;
+    margin: 20px auto auto auto;
+    width: 90%;
+
+}
+
+.section{
+    border: 1px solid #ff0000;
+    outline: 1px solid #ffffff;
+    outline-offset: 2px;
+    border-radius: 2px;
+    padding: 15px;
+    margin: 0;
+    color: #ffffff;
+    background-color: black;
+    box-shadow: inset 2px 2px 15px #ff0000;
+
+}
+
+.links{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#item1 {
+grid-column: 1/5 ;
+grid-row: 1/2 ;
+/* background-image: url("side1.jpg") */
+
+
+}
+
+#divtext1 {
+    font: 20px arial; 
+    text-align: right;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px #ff0000, 0 0 1em #ffffff, 0 0 1em #100199;
+}
+
+#item2 {
+    grid-column: 5/9;
+    grid-row: 1/2;
+       
+}
+
+#divtext2 {
+    font: 20px arial; 
+    text-align: left;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px #ff0000, 0 0 1em #ffffff, 0 0 1em #100199;
+}
+
+#item3 {
+    grid-column: 1/2 ;
+    grid-row: 2/6 ;
+    /* background-image: url("side1.jpg") */
+}
+
+#item4 {
+    /* background-image: url('side1.jpg'); */
+    grid-column: 2/3 ;
+    grid-row: 2/6 ;
+        
+}
+
+#item5 {
+    grid-column: 3/9 ;
+    grid-row: 2/3 ;
+        
+}
+
+#divtext5 {
+    font: 15px arial; 
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 5px;
+    text-shadow: 3px 3px 5px #ff0000, 0 0 1em #ffffff, 0 0 1em #100199;
+}
+
+
+#item6 {
+    background-image: url("backback.jpg");
+    grid-column: 3/7;
+    grid-row: 3/6;
+    padding-top: 10px;
+        
+}
+
+#divtext6 {
+    font: 30px arial; 
+    text-align: left;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px #ff0000, 0 0 1em #ffffff, 0 0 1em #100199;
+}
+
+
+
+#item7 {
+    grid-column: 7/8 ;
+    grid-row: 3/6 ;
+    /* background-image: url("side1.jpg") */
+}
+
+#item8 {
+    grid-column: 8/9;
+    grid-row: 3/6 ;
+    /* background-image: url("side1.jpg") */
+      
+}
+
+#item9 {
+    grid-column: 1/4;  
+    grid-row: 6/7;
+    
+}
+
+#divtext9 {
+    font: 15px arial; 
+    text-align: right;
+    letter-spacing: 2px;
+    padding: 5px;
+    text-shadow: 3px 3px 5px #ff0000, 0 0 1em #ffffff, 0 0 1em #100199;
+}
+
+
+#item10 {
+    grid-column: 4/9 ;
+    grid-row: 6/7;
+  /* background-color: #675a5a;       */
+}
+
+#divtext10 {
+    font: 15px arial; 
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 5px;
+    text-shadow: 3px 3px 5px #ff0000, 0 0 1em #ffffff, 0 0 1em #100199;
+}
+
+
+#item11 {
+    grid-column: 1/4 ;
+   
+    /* background-image: url("bottom.jpg") */
+       
+}
+
+#divtext11 {
+    font: 15px arial; 
+    text-align: right;
+    letter-spacing: 2px;
+    padding: 5px;
+    text-shadow: 3px 3px 5px #ff0000, 0 0 1em #ffffff, 0 0 1em #100199;
+}
+
+
+#item12 {
+    grid-column: 4/9 ;
+   /* background-color: #9b8c8c; */
+    /* background-image: url("bottom2.jpg"); */
+       
+}
+
+#divtext12 {
+    font: 15px arial; 
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 5px;
+    text-shadow: 3px 3px 5px #ff0000, 0 0 1em #ffffff, 0 0 1em #100199;
+}
+
+
+#item13 {
+    grid-column: 1/6 ;
+    
+    /* background-image: url("bottom.jpg") */
+     
+}
+
+#item14 {
+    grid-column: 6/9 ;
+    /* background-color: #cac2c2; */
+    /* background-image: url("bottom2.jpg") */
+     
+}
+#item15 {
+    grid-column: 1/7 ;
+  
+    /* background-image: url("bottom.jpg") */
+       
+}
+
+#divtext15 {
+    font: 12px arial; 
+    text-align: right;
+    /* letter-spacing: 2px; */
+    padding: 7px;
+    text-shadow: 3px 3px 5px #ff0000, 0 0 1em #ffffff, 0 0 1em #100199;
+}
+
+#item16 {
+    grid-column: 7/9 ;
+    /* background-color: #ffffff; */
+    /* background-image: url("bottom2.jpg") */
+        
+}
+
+#divtext16 {
+    font: 12px arial; 
+    text-align: left;
+    /* letter-spacing: 2px; */
+    padding: 7px;
+    text-shadow: 3px 3px 5px #ff0000, 0 0 1em #ffffff, 0 0 1em #100199;
+}
+
+
+
